@@ -1,0 +1,34 @@
+{
+  "name": "steal-buble",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "buble": "^0.5.5",
+    "rollup": "^0.25.8"
+  },
+  "devDependencies": {
+    "steal": "stealjs/steal#modules",
+    "steal-qunit": "^0.1.1"
+  },
+  "system": {
+    "npmAlgorithm": "flat",
+    "map": {
+      "buble": "buble/dist/buble.deps",
+      "rollup": "rollup/dist/rollup.browser"
+    },
+    "meta": {
+      "buble": {
+        "format": "global"
+      },
+      "rollup": {
+        "format": "global"
+      }
+    }
+  }
+}
