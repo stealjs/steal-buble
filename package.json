@@ -14,20 +14,17 @@
   },
   "devDependencies": {
     "steal": "stealjs/steal#modules",
-    "steal-qunit": "^0.1.1"
+    "steal-qunit": "^0.1.1",
+    "steal-tools": "^0.16.1"
   },
   "system": {
     "npmAlgorithm": "flat",
-    "map": {
-      "buble": "buble/dist/buble.deps",
-      "rollup": "rollup/dist/rollup.browser"
-    },
-    "meta": {
-      "buble": {
-        "format": "global"
-      },
-      "rollup": {
-        "format": "global"
+    "envs": {
+      "window-development": {
+        "map": {
+          "buble": "buble/dist/buble.deps",
+          "rollup": "rollup/dist/rollup.browser"
+        }
       }
     }
   }

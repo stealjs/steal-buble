@@ -6,19 +6,9 @@ var bubleOptions = {
 		modules: false
 	}
 };
-
 var noop = function(){};
 
-var isJSExp = /(\.js|\.esm)$/;
-var isJS = function(filename){
-	return isJSExp.test(filename);
-};
-
 exports.translate = function(translate, load){
-	if(!isJS(load.address)) {
-		return;
-	}
-
 	var loader = {
 		resolveId: function(id){
 			return id === load.name ? id : undefined;
