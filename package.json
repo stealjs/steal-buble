@@ -9,8 +9,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "buble": "^0.5.5",
-    "rollup": "^0.25.8"
+    "buble": "^0.14.2",
+    "rollup": "^0.36.4"
   },
   "devDependencies": {
     "steal": "stealjs/steal#modules",
